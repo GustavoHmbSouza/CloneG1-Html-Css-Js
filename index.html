@@ -2,37 +2,57 @@
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
-
+	<link rel="stylesheet" type="text/css" href="css/header.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/SectionBanners.css" media="screen" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+	<script type="text/javascript" src="frontJs/header.js"></script>
 </head>
 <body>
 	<header>
-		<nav id="primeiraNav">		
-			<ul id="categorias">
-				<li id="categoria_1"><a href="#">globo.com&nbsp</a> | </li> 
-				<li id="categoria_2"><a href="#">g1&nbsp</a> | </li> 
-				<li id="categoria_3"><a href="#">globoesporte&nbsp</a> | </li>
-				<li id="categoria_4"><a href="#">gshow&nbsp</a> | </li> 
-				<li id="categoria_5"><a href="#">vídeos&nbsp</a> </li>
-			</ul>
-			<ul id="menu">
-				<li>Assine Já</li>
-				<li>Minha Conta</li>
-				<li>E-mail</li>
-				<li>gshow</li>
-				<li>vídeos</li>
-			</ul>
+		<nav id="backPrimeiraNav">	
+			<nav id="primeiraNav">		
+				<ul id="categorias">
+					<li id="categoria_1"><a href="#">globo.com&nbsp</a> <div class="barraCinza">|</div></li> 
+					<li id="categoria_2"><a href="#">g1&nbsp</a> <div class="barraCinza">|</div> </li> 
+					<li id="categoria_3"><a href="#">globoesporte&nbsp</a> <div class="barraCinza">|</div> </li>
+					<li id="categoria_4"><a href="#">gshow&nbsp</a> <div class="barraCinza">|</div> </li> 
+					<li id="categoria_5"><a href="#">vídeos&nbsp</a> </li>
+				</ul>
+				<ul id="menu">
+					<li><a href="#" class="aHoverAzul">Assine Já</a></li>
+					<li><a href="#" class="aHoverAzul">Minha Conta</a></li>
+					<li><a href="#" class="aHoverAzul">E-mail <div id="rotacao"> > </div></a></li>
+					<li><a href="#" id="entrarBtn">Entrar ></a></li>
+				</ul>
+			</nav>				
 		</nav>
-		<nav id="segundaNav">
-			<h2>icone 1</h2>
-			<h1>icone 2</h1>
-			<h2>icone 3</h2>
+		<nav id="backSegundaNav">	
+			<nav id="segundaNav">
+				<a href="#" id="menuSegundoNav">
+					<i class="zmdi zmdi-menu" id="iconeMenu"></i>
+					<div id="textoMenu"">&nbsp&nbspMenu</div>
+				</a>
+				<a href="#" id="iconeG1">
+					<h1>
+						<svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 0 516 308" id="cor-primaria">
+							<title>G1</title>
+							<path fill="currentColor" fill-rule="evenodd" d="M0 208.716C0 263.56 50.353 308 112.558 308h224.66V118.447H212.173v94.417h-59.39c-15.54 0-28.157-11.125-28.157-24.828V95.97c0-13.68 7.63-24.826 23.16-24.826h100.467L304.525.47H112.558C50.353.47 0 49.482 0 104.34v104.376zM387.186 308H512V24.832C512 11.13 499.408 0 483.868 0h-123.05l-56.292 70.95h54.523c15.538 0 28.136 11.123 28.136 24.817V308z">
+							</path>
+						</svg>
+					</h1>
+				</a>
+				<div id="buscarBtn" onclick="aumentaBuscarBtn()">
+						<i id="iconeBuscar"class="zmdi zmdi-search"></i>
+						<input id="inputBuscarBtn" class="placeInputBuscarBtnBranco"  type="text" placeholder="Buscar" onblur="diminuiBuscarBtn()" >
+				</div>
+			</nav>
 		</nav>
+
 	</header>
 
 	<main>
 		<section>
-			<article>
+			<article id="PrimeiroBanner">
 				<h3>Meio ambiente</h3>
 				<h1>
 					Bolsonaro diz que óleo no Nordeste não é brasileiro e que existe país 'no radar'
