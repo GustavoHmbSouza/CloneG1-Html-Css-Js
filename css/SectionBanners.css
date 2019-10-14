@@ -1,13 +1,15 @@
 main
 {
     max-width: 1200px;
-    margin: auto;
+    position: relative;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 main #banner
 {
     display: flex;
-    margin-top: 50px;
 }
 
 main #banner a
