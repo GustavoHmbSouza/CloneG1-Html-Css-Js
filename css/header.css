@@ -6,9 +6,14 @@
 	box-sizing: border-box;
 }
 
+body
+{
+	background: #f1ece7;
+}
+
 header #backPrimeiraNav
 {
-	background: #FFFAF0;
+	background: #f1ece7;
 }
 
 header #primeiraNav
