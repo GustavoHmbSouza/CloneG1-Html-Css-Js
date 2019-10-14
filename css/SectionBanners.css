@@ -20,51 +20,47 @@ main #banner #PrimeiroBanner
     height: 600px;
     width: 592.5px;
     background: rgb(175, 90, 90);
-    color: white;
-    overflow: hidden;
+    border-radius: 4px 4px 4px 4px;
+    border: 1px solid rgb(221, 220, 220);
+}
+
+main #banner #PrimeiroBanner:hover #imgPrimeiroBanner #textosBanner h1
+{
+    color: #a80000;
 }
 
 main #banner #PrimeiroBanner #imgPrimeiroBanner
 {
-    background: url("../imagens/Banners/irma.jpg");
+    background: white;
     height: 600px;
     width: 592.5px;
     max-width: 100%;
-    transition-property: transform;
-    transition-duration: 0.5s;
-    transition-timing-function:linear;
-    background-position: center;
-    transform: scale(1.1);
-}
-
-main #banner #PrimeiroBanner #imgPrimeiroBanner:hover
-{
-    transform: scale(1.2);
 }
 
 main #banner #PrimeiroBanner #imgPrimeiroBanner #textosBanner
 {
-    transition-property: all;
-    transition-duration: 0.5s;
-    transition-timing-function:linear;
-    padding: 10%;
+    padding: 25px;
 }
-main #banner #PrimeiroBanner #imgPrimeiroBanner:hover #textosBanner
+
+main #banner #PrimeiroBanner #imgPrimeiroBanner #textosBanner h3
 {
-    padding-top: 11.1%;
-    padding-left: 9.7%;
-    transform: scale(0.91);
+    color: rgb(133, 130, 130);
+    font-size: 17px;
 }
 
 main #banner #PrimeiroBanner #imgPrimeiroBanner #textosBanner h1
 {
-    margin-top: 250px;
+    font-size: 40px;
+    color:#c4170c;
+    margin-top: 200px;
+    font-weight: bold;
 }
 
 main #banner #PrimeiroBanner #imgPrimeiroBanner #textosBanner ul
 {
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 17px;
+    color: rgb(71, 69, 69);
 }
 
 
@@ -77,6 +73,7 @@ main #banner #SegundoBanner
     background: rgb(175, 90, 90);
     color: white;
     overflow: hidden;
+    border-radius: 4px 4px 4px 4px;
 }
 
 main #banner #SegundoBanner #imgSegundoBanner
@@ -86,7 +83,7 @@ main #banner #SegundoBanner #imgSegundoBanner
     width: 592.5px;
     max-width: 100%;
     transition-property: transform;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
     transition-timing-function:linear;
     background-position: center;
     transform: scale(1.1);
@@ -100,7 +97,7 @@ main #banner #SegundoBanner #imgSegundoBanner:hover
 main #banner #SegundoBanner #imgSegundoBanner #textosBanner
 {
     transition-property: all;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
     transition-timing-function:linear;
     padding: 10%;
 }
@@ -128,6 +125,7 @@ main #banner #TerceiroBanner
     background: rgb(175, 90, 90);
     color: white;
     overflow: hidden;
+    border-radius: 4px 4px 4px 4px;
 }
 
 main #banner #TerceiroBanner #imgTerceiroBanner
@@ -137,7 +135,7 @@ main #banner #TerceiroBanner #imgTerceiroBanner
     width: 592.5px;
     max-width: 100%;
     transition-property: transform;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
     transition-timing-function:linear;
     background-position: center;
     transform: scale(1.1);
@@ -151,7 +149,7 @@ main #banner #TerceiroBanner #imgTerceiroBanner:hover
 main #banner #TerceiroBanner #imgTerceiroBanner #textosBanner
 {
     transition-property: all;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
     transition-timing-function:linear;
     padding: 10%;
 }

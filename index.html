@@ -5,12 +5,14 @@
 	<link rel="stylesheet" type="text/css" href="css/header.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="css/SectionBanners.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="css/noticias.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/assides.css" media="screen" />
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
 
 	<script type="text/javascript" src="frontJs/header.js"></script>
 	<script type="text/javascript" src="frontJs/SectionBanner.js"></script>
-
+	<script type="text/javascript" src="frontJs/noticias.js"></script>
+	<script type="text/javascript" src="frontJs/asides.js"></script>
 </head>
 <body>
 	<header>
@@ -60,7 +62,7 @@
 			<a href="#">
 				<article id="PrimeiroBanner">	
 					<div id="imgPrimeiroBanner">
-						<div id="textosBanner" ignoreCss="True">	
+						<div id="textosBanner">	
 							<h3>Meio ambiente</h3>
 							<h1>
 								Bolsonaro diz que óleo no Nordeste não é brasileiro e que existe país 'no radar'
@@ -96,10 +98,10 @@
 			</section>
 		</section>
 
-		<section id="noticias">
-			<section>
+		<section id="conteudo">
+			<section id="noticias">
 				<article>
-					<a href="#"><img src="imagens/Banners/Santos.jpg" class="imgNoticia" alt=""></a>
+					<a href="#"><img src="imagens/Noticias/vazamentoOleo.jpeg" class="imgNoticia" alt=""></a>
 					<div class="noticia"> 
 						<h4 class="titulo1Noticia">Natureza</h4>
 						<a href="#"><h1 class="titulo2Noticia">100 toneladas de óleo foram recolhidas das praias, diz Salles</h1></a>
@@ -109,7 +111,7 @@
 				</article>
 				<hr>
 				<article>
-					<a href="#"><img src="imagens/Banners/jogo.jpg" class="imgNoticia" alt=""></a>
+					<a href="#"><img src="imagens/Noticias/meioAmbiente.jpg" class="imgNoticia" alt=""></a>
 					<div class="noticia"> 
 						<h4 class="titulo1Noticia">Viagem internacional</h4>
 						<a href="#"><h1 class="titulo2Noticia">Especialistas analisam declarações do ministro do Meio Ambiente no exterior</h1></a>
@@ -119,7 +121,7 @@
 				</article>
 				<hr>
 				<article>
-					<a href="#"><img src="imagens/Banners/irma.jpg" class="imgNoticia" alt=""></a>
+					<a href="#"><img src="imagens/Noticias/justica.jpg" class="imgNoticia" alt=""></a>
 					<div class="noticia"> 
 						<h4 class="titulo1Noticia">Campanhas do PSL</h4>
 						<a href="#"><h1 class="titulo2Noticia">Justiça decreta sigilo no processo sobre candidatos-laranja</h1></a>
@@ -128,47 +130,55 @@
 					</div>
 				</article>
 			</section>
-			<section>
-				<aside>
+			<section id="assides">
+				<aside id="primeiroAsside">
 					<h1>Vídeos do Rock in Rio</h1>
-					<div class="video">
+					<div class="video bordaAsside">
 						<h2><a href="#">Muse toca "Hysteria" e fãs cantam junto</a></h2>
-						<img src="" alt="">
+						<a href="#"><img src="imagens/AssideRockInRio/Cantor.jpg" alt=""></a>
 					</div>
-					<div class="video">
+					<div class="video bordaAsside">
 						<h2><a href="#">Imagine Dragons termina show com "Radioacrive"</a></h2>
-						<img src="" alt="">
+						<a href="#"><img src="imagens/AssideRockInRio/Show.jpg" alt=""></a>
 					</div>
 					<div class="video">
-						<h2><a href="#">Nicklback toca "How You Remind Me</a></h2>
-						<img src="" alt="">
+						<h2><a href="#">Nicklback toca "How You Remind Me"</a></h2>
+						<a href="#"><img src="imagens/AssideRockInRio/Publico.jpg" alt=""></a>
 					</div>
-					<h3>Mais Videos do Rock in Rio</h3>
+					<div class="video videoOculto">
+						<h2><a href="#">Charlie Puth no Rock in Rio 2019</a></h2>
+						<a href="#"><img src="imagens/AssideRockInRio/Cantor2.jpg" alt=""></a>
+					</div>
+					<div class="video videoOculto">
+						<h2><a href="#">Charlie Puth encerra palco Sunset neste sábado</a></h2>
+						<a href="#"><img src="imagens/AssideRockInRio/Festa.jpg" alt=""></a>
+					</div>
+					<a  onclick="verificaRockInRio()"><h3>Mais Videos do Rock in Rio</h3></a>
 				</aside>
-				<aside>
+				<aside id="segundoAsside">
 					<h1>Enem 2019</h1>
-					<div class="noticiaAside">
+					<div class="noticiaAside bordaAsside">
 						<div class="textosNoticiaAside">
 							<p>Fique atento</p>
 							<h2><a href="#">Consulta aos locais de prova começa no dia 16</a></h2>
 						</div>
-						<img src="" alt="">
+						<img src="imagens/Banners/jogo.jpg" alt="">
 					</div>
-					<div class="noticiaAside">
+					<div class="noticiaAside bordaAsside">
 						<div class="textosNoticiaAside">
 							<p>Meio ambiente, bullying, analfabetismo...</p>
 							<h2><a href="#">13 temas de redação que podem cair neste ano</a></h2>
 						</div>
-						<img src="" alt="">
+						<img src="imagens/Banners/irma.jpg" alt="">
 					</div>
 					<div class="noticiaAside">
 						<div class="textosNoticiaAside">
 							<p>5 milhões</p>
 							<h2><a href="#">Enem tem o menor n° de inscritos desde 2010</a></h2>
 						</div>
-						<img src="" alt="">
+						<img src="imagens/Banners/Santos.jpg" alt="">
 					</div>
-					<h3>Tudo sobre Enem 2019</h3>
+					<a href="#"><h3>Tudo sobre Enem 2019</h3></a>
 				</aside>
 			</section>		
 		</section>

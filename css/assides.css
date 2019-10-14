@@ -1,0 +1,129 @@
+main #conteudo #assides
+{
+    border: 1px solid rgb(221, 220, 220);
+    margin-left: 20px;
+}
+
+main #conteudo #assides aside 
+{
+    background: white;
+}
+
+main #conteudo #assides aside h1
+{
+    border-bottom: 1px solid rgb(221, 220, 220);
+    padding: 15px;
+}
+
+main #conteudo #assides #primeiroAsside .video
+{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+    padding: 15px 0 15px 0;
+}
+
+
+main #conteudo #assides aside a
+{
+    text-decoration: none;
+}
+main #conteudo #assides aside a h3
+{
+    color:#c4170c;
+    border-top: 1px solid rgb(221, 220, 220);
+    padding: 15px;
+}
+
+main #conteudo #assides aside a h3:hover
+{
+    color: #a80000;
+}
+
+main #conteudo #assides #primeiroAsside .bordaAsside
+{
+    border-bottom: 1px solid rgb(221, 220, 220);
+}
+
+main #conteudo #assides #primeiroAsside .video h2 a
+{
+    text-decoration: none;
+    font-size: 17px;
+    color:#c4170c;
+}
+
+main #conteudo #assides #primeiroAsside .video h2 a:hover
+{
+    color: #a80000;
+}
+
+main #conteudo #assides #primeiroAsside .video img
+{
+    height: 100px;
+    width: 150px;
+    margin: 4px;
+}
+
+main #conteudo #assides #primeiroAsside .videoOculto
+{
+    display: none;
+}
+
+main #conteudo #assides #primeiroAsside a h3
+{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+main #conteudo #assides #segundoAsside
+{
+    margin-top: 20px;
+}
+
+main #conteudo #assides #segundoAsside .bordaAsside
+{
+    border-bottom: 1px solid rgb(221, 220, 220);
+}
+
+main #conteudo #assides #segundoAsside .noticiaAside
+{
+    display: flex;
+    margin: auto;
+    padding: 15px 0 15px 0;
+    width: 90%;
+}
+
+main #conteudo #assides #segundoAsside .noticiaAside img
+{
+    height: 100px;
+    width: 150px;
+    margin: 4px;
+}
+
+main #conteudo #assides #segundoAsside .noticiaAside .textosNoticiaAside
+{
+    font-weight: bold;
+    color: rgb(133, 130, 130);
+    font-size: 14px;
+}
+
+main #conteudo #assides #segundoAsside .noticiaAside .textosNoticiaAside h2 a
+{
+    text-decoration: none;
+    font-size: 17px;
+    color:#c4170c;
+}
+
+main #conteudo #assides #segundoAsside .noticiaAside .textosNoticiaAside h2 a:hover
+{
+    color: #a80000;
+}
