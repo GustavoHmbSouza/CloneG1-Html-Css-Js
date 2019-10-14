@@ -3,3 +3,174 @@ main
     max-width: 1200px;
     margin: auto;
 }
+
+main #banner
+{
+    display: flex;
+    margin-top: 50px;
+}
+
+main #banner a
+{
+    text-decoration: none;
+}
+
+main #banner #PrimeiroBanner
+{
+    height: 600px;
+    width: 592.5px;
+    background: rgb(175, 90, 90);
+    color: white;
+    overflow: hidden;
+}
+
+main #banner #PrimeiroBanner #imgPrimeiroBanner
+{
+    background: url("../imagens/Banners/irma.jpg");
+    height: 600px;
+    width: 592.5px;
+    max-width: 100%;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function:linear;
+    background-position: center;
+    transform: scale(1.1);
+}
+
+main #banner #PrimeiroBanner #imgPrimeiroBanner:hover
+{
+    transform: scale(1.2);
+}
+
+main #banner #PrimeiroBanner #imgPrimeiroBanner #textosBanner
+{
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function:linear;
+    padding: 10%;
+}
+main #banner #PrimeiroBanner #imgPrimeiroBanner:hover #textosBanner
+{
+    padding-top: 11.1%;
+    padding-left: 9.7%;
+    transform: scale(0.91);
+}
+
+main #banner #PrimeiroBanner #imgPrimeiroBanner #textosBanner h1
+{
+    margin-top: 250px;
+}
+
+main #banner #PrimeiroBanner #imgPrimeiroBanner #textosBanner ul
+{
+    margin-top: 10px;
+    margin-left: 17px;
+}
+
+
+
+
+main #banner #SegundoBanner
+{
+    height:292.5px;
+    width: 592.5px;
+    background: rgb(175, 90, 90);
+    color: white;
+    overflow: hidden;
+}
+
+main #banner #SegundoBanner #imgSegundoBanner
+{
+    background: url("../imagens/Banners/Santos.jpg");
+    height: 292.5px;
+    width: 592.5px;
+    max-width: 100%;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function:linear;
+    background-position: center;
+    transform: scale(1.1);
+}
+
+main #banner #SegundoBanner #imgSegundoBanner:hover
+{
+    transform: scale(1.2);
+}
+
+main #banner #SegundoBanner #imgSegundoBanner #textosBanner
+{
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function:linear;
+    padding: 10%;
+}
+main #banner #SegundoBanner #imgSegundoBanner:hover #textosBanner
+{
+    padding-top: 10%;
+    padding-left: 9.7%;
+    transform: scale(0.91);
+}
+
+main #banner #SegundoBanner #imgSegundoBanner #textosBanner h1
+{
+    margin-top: 120px
+}
+
+
+
+
+
+main #banner #TerceiroBanner
+{
+    margin-top: 15px;
+    height: 292.5px;
+    width: 592.5px;
+    background: rgb(175, 90, 90);
+    color: white;
+    overflow: hidden;
+}
+
+main #banner #TerceiroBanner #imgTerceiroBanner
+{
+    background: url("../imagens/Banners/jogo.jpg");
+    height: 292.5px;
+    width: 592.5px;
+    max-width: 100%;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function:linear;
+    background-position: center;
+    transform: scale(1.1);
+}
+
+main #banner #TerceiroBanner #imgTerceiroBanner:hover
+{
+    transform: scale(1.2);
+}
+
+main #banner #TerceiroBanner #imgTerceiroBanner #textosBanner
+{
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function:linear;
+    padding: 10%;
+}
+main #banner #TerceiroBanner #imgTerceiroBanner:hover #textosBanner
+{
+    padding-top: 10%;
+    padding-left: 9.7%;
+    transform: scale(0.91);
+}
+
+main #banner #TerceiroBanner #imgTerceiroBanner #textosBanner h1
+{
+    margin-top: 120px;
+}
+
+
+
+
+main #banner #segundoTerceiroBanner
+{
+    margin-left: 15px;
+}
