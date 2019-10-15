@@ -41,6 +41,7 @@ main #conteudo section article .noticia a
 main #conteudo section article .noticia li
 {
     margin-top: 20px; 
+    margin-left: 15px;
 }
 
 main #conteudo section article .noticia .titulo2Noticia:hover

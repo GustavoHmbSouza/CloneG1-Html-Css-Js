@@ -68,6 +68,7 @@ main #conteudo #assides #primeiroAsside .video img
 main #conteudo #assides #primeiroAsside .videoOculto
 {
     display: none;
+    border-top: 1px solid rgb(221, 220, 220);
 }
 
 main #conteudo #assides #primeiroAsside a h3
