@@ -10,7 +10,6 @@ $(window).on('load', function() {
     {
         diminuiBuscarBtn();
     });
-
 }); 
 
 function diminuiBuscarBtn()
