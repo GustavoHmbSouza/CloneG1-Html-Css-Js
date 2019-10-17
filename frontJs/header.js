@@ -1,69 +1,47 @@
-function aumentaBuscarBtn()
-{
-    var elementoInput = document.querySelector('#segundaNav #buscarBtn #inputBuscarBtn');
-    var elementoI = document.querySelector('#segundaNav #buscarBtn #iconeBuscar');
+$(window).on('load', function() {
+    $( "#buscarBtn" ).on( "click", function() {
+        $("#inputBuscarBtn").attr("id", "inputBuscarBtnExpandido")
+        .attr("class", "placeInputBuscarBtnCinza")
+        .focus();
 
-    if(elementoInput)
+        $("#iconeBuscar").attr("id", "iconeBuscarExpandido");
+    });
+    $( "#inputBuscarBtn" ).on("blur", function()
     {
-        elementoInput.id = "inputBuscarBtnExpandido"; 
-        elementoInput.className = "placeInputBuscarBtnCinza";
-    
-        elementoI.id = "iconeBuscarExpandido";
-    }
-}
+        diminuiBuscarBtn();
+    });
+
+}); 
 
 function diminuiBuscarBtn()
 {
-    var elementoInput = document.querySelector('#segundaNav #buscarBtn #inputBuscarBtnExpandido');
-    var elementoI = document.querySelector('#segundaNav #buscarBtn #iconeBuscarExpandido');
+    $("#inputBuscarBtnExpandido").attr("id", "inputBuscarBtn")
+    .attr("class", "placeInputBuscarBtnBranco");
 
-    if(elementoInput)
-    {
-        elementoInput.id = "inputBuscarBtn"; 
-        elementoInput.className = "placeInputBuscarBtnBranco";
-        
-        if(elementoI)
-        {
-            elementoI.id = "iconeBuscar";
-        }
-    }
+    $("#iconeBuscarExpandido").attr("id", "iconeBuscar");
 }
 
 function verificaInputBuscarMenu() 
 {
-    var botaoNode = document.querySelector("header #segundaNav #buscarBtn #inputBuscarBtn");
-    if(!botaoNode)
+    var botaoNode = $("#inputBuscarBtn").length ? $("#inputBuscarBtn") : $("#inputBuscarBtnExpandido");
+    
+    if (window.innerWidth < 1050 && botaoNode.css("display") !='none')
     {
-        botaoNode = document.querySelector("header #segundaNav #buscarBtn #inputBuscarBtnExpandido");
-    }
+        botaoNode.css("display", "none");
 
-    if (window.innerWidth < 1050 && botaoNode.style.display !='none')
-    {
-        botaoNode.style.display =  'none';
+        $("#textoMenu").css("display", "none");
 
-        var TextoMenuNode = document.querySelector("header #segundaNav #menuSegundoNav #textoMenu");
-        TextoMenuNode.style.display = 'none';
-
-        var iconeNode = document.querySelector("header #segundaNav #buscarBtn #iconeBuscarExpandido");
-        if(!iconeNode)
-        {
-            var iconeNode = document.querySelector("header #segundaNav #buscarBtn #iconeBuscar");
-        }
-
-        iconeNode.id = "iconeBuscarTelaPequena";
+        var iconeNode = $("#iconeBuscar").length ? $("#iconeBuscar") : $("#iconeBuscarExpandido");
+        iconeNode.attr("id", "iconeBuscarTelaPequena");
     }
     else if(window.innerWidth > 1050)
     {
-        botaoNode.style.display =  'flex';
+        botaoNode.css("display", "flex");
 
-        var TextoMenuNode = document.querySelector("header #segundaNav #menuSegundoNav #textoMenu");
-        var iconeNode = document.querySelector("header #segundaNav #buscarBtn #iconeBuscarTelaPequena");
-        if(iconeNode)
-        {
-            iconeNode.id = "iconeBuscar";
-            diminuiBuscarBtn();
-            TextoMenuNode.style.display = 'inline';
-        }
+        $("#textoMenu").css("display", "inline");
+        $("#iconeBuscarTelaPequena").attr("id", "iconeBuscar");
+        
+        diminuiBuscarBtn();    
     }
 }
 
@@ -71,25 +49,13 @@ function verificaMenuPrimeiraNav()
 {
     if (window.innerWidth < 780)
     {
-        var MenuNode = document.getElementsByClassName("aHoverAzul");
-
-        for(var i = 0; i!=MenuNode.length; i++)
-        {
-            MenuNode[i].style.display = 'none';
-        }
-
-        var MenuNode = document.querySelector("header #primeiraNav #menu li #entrarBtn");
-        MenuNode.innerHTML = "Entre"; 
+        $(".aHoverAzul").css("display", "none");
+        $("#entrarBtn").text("Entre");
     }
     else if (window.innerWidth > 780)
     {
-        var MenuNode = document.getElementsByClassName("aHoverAzul");
-        for(var i = 0; i!=MenuNode.length; i++)
-        {
-            MenuNode[i].style.display = 'inline';
-        }   
-        var MenuNode = document.querySelector("header #primeiraNav #menu li #entrarBtn");
-        MenuNode.innerHTML = "Entrar >";  
+        $(".aHoverAzul").css("display", "inline");
+        $("#entrarBtn").text("Entrar >");
     }
 }
 
